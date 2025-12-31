@@ -83,6 +83,13 @@ section .task-column {
   display: flex;
   flex-direction: column;
   gap: var(--padding-l);
+  cursor: grab;
+  transition: all 0.7s cubic-bezier(5.19, 1, 0.22, 1);
+}
+
+section .task-column.hover-over {
+  border: 2px dashed var(--primary-text-color);
+  scale: 1.05;
 }
 
 section .task-column .heading {

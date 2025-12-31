@@ -13,24 +13,24 @@
         <div class="right"><button>ADD NEW TASK</button></div>
       </nav>
       <section class="board">
-        <div class="task-column">
+        <div id="to-do" class="task-column">
           <div class="heading">
             <div class="left">TO DO</div>
             <div class="right">COUNT</div>
           </div>
-          <div class="task">
+          <div draggable="true" class="task">
             <h2>TASK 1</h2>
             <p>DESCRIPTION FOR TASK 1</p>
             <button>DELETE</button>
           </div>
         </div>
-        <div class="task-column">
+        <div id="progress" class="task-column">
           <div class="heading">
             <div class="left">IN PROGRESS</div>
             <div class="right">COUNT</div>
           </div>
         </div>
-        <div class="task-column">
+        <div id="done" class="task-column">
           <div class="heading">
             <div class="left">DONE</div>
             <div class="right">COUNT</div>
@@ -38,5 +38,7 @@
         </div>
       </section>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
